@@ -1,0 +1,21 @@
+creating first express server
+simple get request
+simple post request
+
+filters with query string
+filters with params
+
+
+understading http verbs
+GET
+POST
+PUT
+PATCH
+DELETE
+
+creating CRUD for sample resources
+songs/users/posts/products
+
+
+REST naming convension
+
