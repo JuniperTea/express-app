@@ -57,3 +57,8 @@ module.exports = {
 };
 
 //if you have embedded promises, you need to return all the promises.
+
+//in package.json add the following
+// "engines": {
+//   "node": ">=14.2"
+// },        //this setting is required because mongodb version is only suported after node v14
