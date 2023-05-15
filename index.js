@@ -7,6 +7,8 @@ const { readAsJson, writeToFile } = require("./utilities/utils");
 const { logger } = require("./logger");
 const { authenticationRoutes } = require("./apis/authentication-routes");
 const { signupRoutes } = require("./apis/sign-up-routes");
+const dotenv = require("dotenv");
+dotenv.config(); //this tries to find .env and map all the environment variables
 let count = 0;
 const app = express();
 app.use(express.json());
