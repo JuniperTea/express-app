@@ -1,15 +1,8 @@
 //in backend we cannot use export, because we are using commonjs compoents like ;require'
 const { MongoClient, ObjectId } = require("mongodb"); //if we forget to import mongoclient, then mongoclient will not be defined
 
-let connectionstring =
-  "mongodb+srv://laura:123@cluster0.e6db6pg.mongodb.net/test";
-
 function getClient() {
-  // return new MongoClient(
-  //   process.env.SOME_VARIABLE_NAME //accesses the environemnt variable for the machine
-  // );
-
-  return new MongoClient(connectionString);
+  return new MongoClient(process.env.CONNECTION_STRING); //gets value from .env as environment variable
 }
 
 function getAllDocuments(collectionName) {
