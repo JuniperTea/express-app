@@ -32,6 +32,17 @@ const authenticator = (req, res, next) => {
   }
 };
 
+// var bucket;
+
+// async function createGridStream(){
+//   return new Promise((resolve, reject) => {
+//     new MongoAPIError.MongoClient(preocess.env.CONNECTION_STRING).connect().then(client =>{
+//       const db = client.db(process.env.DEFAULT_DATABSE);
+//       resolve(new mongo )
+//     })
+//   })
+// }
+
 //url here is a prefix for all child urls
 //app.use("/songs", counter, authenticator, songsRoutes);
 app.use("/songs", songsRoutes);
@@ -48,3 +59,11 @@ app.use("/sign-up", signupRoutes);
 app.listen(3001, () => {
   console.log("Server started...");
 });
+
+
+// createGridStream().then (x=>{
+//   bucket = x;
+//   server = app.listen(3000, () => {
+//   console.log('Server Started..'))
+// })
+// })
